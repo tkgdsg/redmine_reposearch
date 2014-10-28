@@ -12,3 +12,10 @@ en:
   description_search: "Searchfield"
   button_search: "Search"
   label_not_found: "Did not match any documents."
+
+  settings_pdf2txt: "filter software from pdf to text"
+  settings_doc2txt: "filter software from doc to text"
+  settings_xls2txt: "filter software from xls to text"
+  settings_ppt2txt: "filter software from ppt to text"
+  settings_html2text: "filter software from html to text"
+  settings_htmlconv: "html convert"

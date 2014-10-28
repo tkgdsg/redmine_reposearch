@@ -35,4 +35,19 @@ Redmine::Plugin.register :redmine_reposearch do
     {:controller => 'reposearch', :action => 'search', },
     :caption => :label_reposearch,
     :param => :id
+
+  settings :default => {
+    :pdf2txt => '/usr/local/share/hyperestraier/filter/estfxpdftohtml',
+    :pdf2html => true,
+    :doc2txt  => '/usr/local/share/hyperestraier/filter/estfxmsotohtml',
+    :doc2html => true,
+    :xls2txt  => '/usr/local/share/hyperestraier/filter/estfxmsotohtml',
+    :xls2html => true,
+    :ppt2txt  => '/usr/local/share/hyperestraier/filter/estfxmsotohtml',
+    :ppt2html => true,
+    :html2text => '/usr/bin/html2text'
+  } , :partial =>  'settings/redmine_reposearch'
+
+#  Rails.logger.info("path: %s %s" % [ @settings[:pdf2txt] , @settings[:ms2txt] ] )
+
 end
