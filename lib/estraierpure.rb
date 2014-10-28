@@ -52,11 +52,14 @@ module EstraierPure
     # `value' specifies the value of the attribute.  If it is `nil', the attribute is removed.
     # The return value is always `nil'.
     def add_attr(name, value)
+      if(!value) then value="" end
       Utility::check_types({ name=>String, value=>String }) if $DEBUG
+#      Rails.logger.info("attr1  %s %s" % [name, value])
       name = name.gsub(/[ \t\r\n\v\f]+/, " ")
       name = name.strip.squeeze(" ")
       value = value.gsub(/[ \t\r\n\v\f]+/, " ")
       value = value.strip.squeeze(" ")
+#      Rails.logger.info("attr2  %s %s" % [name, value])
       @attrs[name] = value
       nil
     end
@@ -182,7 +185,10 @@ module EstraierPure
       @htexts = []
       @kwords = nil
       @score = -1
+#      draft.force_encoding('UTF-8')
+#      draft = draft.scrub('')
       if draft.length
+#        Rails.logger.info("draft: %s" % [ draft ] )
         lines = draft.split(/\n/, -1)
         num = 0
         while num < lines.length

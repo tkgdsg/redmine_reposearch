@@ -1,0 +1,35 @@
+<p>
+<%= label_tag :settings_pdf2txt, l(:settings_pdf2txt) %>
+<%= text_field_tag "settings[pdf2txt]",@settings[:pdf2txt], :size=>80 %>
+
+<%= label_tag :settings_htmlconv, l(:settings_htmlconv) %>
+<%= check_box_tag "settings[pdf2html]" , true, @settings[:pdf2html] %>
+</p>
+
+<p>
+<%= label_tag :settings_doc2txt, l(:settings_doc2txt) %>
+<%= text_field_tag "settings[doc2txt]",@settings[:doc2txt], :size=>80 %>
+
+<%= label_tag :settings_htmlconv, l(:settings_htmlconv) %>
+<%= check_box_tag "settings[doc2html]" , true, @settings[:doc2html] %>
+</p>
+
+<p>
+<%= label_tag :settings_xls2txt, l(:settings_xls2txt) %>
+<%= text_field_tag "settings[xls2txt]",@settings[:xls2txt], :size=>80 %>
+
+<%= label_tag :settings_htmlconv, l(:settings_htmlconv) %>
+<%= check_box_tag "settings[xls2html]" , true, @settings[:xls2html] %>
+</p>
+<p>
+<%= label_tag :settings_ppt2txt, l(:settings_ppt2txt) %>
+<%= text_field_tag "settings[ppt2txt]",@settings[:ppt2txt], :size=>80 %>
+
+<%= label_tag :settings_htmlconv, l(:settings_htmlconv) %>
+<%= check_box_tag "settings[ppt2html]" , true, @settings[:ppt2html] %>
+</p>
+<br/>
+<p>
+<%= label_tag :settings_html2text, l(:settings_html2text) %>
+<%= text_field_tag "settings[html2text]",@settings[:html2text], :size=>80 %>
+</p>

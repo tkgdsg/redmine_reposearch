@@ -35,7 +35,7 @@ module RedmineReposearch
 
   MAIN_REPOSITORY_IDENTIFIER = '[main]'
 
-  INDEXED_FILES = ["java", "xml", "properties","feature", "html", "html", "xhtml", "css", "js", "txt","sh", "cmd","bat" , "rb", "yml", "erb"]
+  INDEXED_FILES = ["java", "xml", "properties","feature", "html", "html", "xhtml", "css", "js", "txt","sh", "cmd","bat" , "rb", "yml", "erb" , "pdf" , "doc" , "xls" , "ppt"]
 
   class IndexingError < StandardError; end
 

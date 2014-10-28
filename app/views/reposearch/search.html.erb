@@ -31,7 +31,7 @@
 <h3><%= l(:label_result_plural) %> (<%= @results.doc_num %>)</h3>
 <dl id="search-results">
 <% for doc in @docs %>
-<dt><%= link_to doc.attr("@title"), {
+<dt><%= link_to URI.unescape(doc.attr("@title")), {
     :controller => 'repositories',
     :action => 'entry',
     :id => @project,

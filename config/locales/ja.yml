@@ -12,3 +12,10 @@ ja:
   button_search: "検索"
   error_estraier_command_failed: "HyperEstraier へのアクセス中にエラーが発生しました: %{value}"
   description_search: "検索キーワード"
+
+  settings_pdf2txt: "pdfからplain textへのフィルタプログラム"
+  settings_doc2txt: "docからplain textへのフィルタプログラム"
+  settings_xls2txt: "xlsからplain textへのフィルタプログラム"
+  settings_ppt2txt: "pptからplain textへのフィルタプログラム"
+  settings_html2text: "htmlからplain textへのフィルタプログラム"
+  settings_htmlconv: "html変換"
